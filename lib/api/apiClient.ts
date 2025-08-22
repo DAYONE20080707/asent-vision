@@ -1,5 +1,5 @@
 // lib/apiClient.ts
-import { microcms } from "@/lib/microcms"
+// import { microcms } from "@/lib/microcms"  // microCMSを使用しないため削除
 
 export type ListResponse<T> = {
   contents: T[]
@@ -12,13 +12,13 @@ async function fetchList<T>(
   endpoint: string,
   queries?: Record<string, unknown>
 ): Promise<T[]> {
-  const res: ListResponse<T> = await microcms.get({ endpoint, queries })
-  return Array.isArray(res?.contents) ? res.contents : []
+  // microCMSの代わりに空配列を返す
+  return []
 }
 
 async function fetchById<T>(endpoint: string, contentId: string): Promise<T> {
-  const res = await microcms.get({ endpoint, contentId })
-  return res as T
+  // microCMSの代わりにnullを返す
+  return null as T
 }
 
 export const apiClient = {

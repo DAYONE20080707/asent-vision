@@ -100,11 +100,11 @@ import LowerService2_03 from "@/components/service/service2/Service_03";
 import LowerService3_01 from "@/components/service/service3/Service_01";
 import LowerService3_02 from "@/components/service/service3/Service_02";
 import LowerService3_03 from "@/components/service/service3/Service_03";
-import LowerBlog_01 from "@/components/blog/blog/Blog_01";
-import LowerBlog_02 from "@/components/blog/blog/Blog_02";
-import LowerBlog_03 from "@/components/blog/blog/Blog_03";
-import BlogDetail_01 from "@/components/blog/blogDetail/BlogDetail_01";
-import BlogDetail_02 from "@/components/blog/blogDetail/BlogDetail_02";
+// import LowerBlog_01 from "@/components/blog/blog/Blog_01";
+// import LowerBlog_02 from "@/components/blog/blog/Blog_02";
+// import LowerBlog_03 from "@/components/blog/blog/Blog_03";
+// import BlogDetail_01 from "@/components/blog/blogDetail/BlogDetail_01";
+// import BlogDetail_02 from "@/components/blog/blogDetail/BlogDetail_02";
 
 // セクション情報とコンポーネントのマッピングの型定義
 interface SectionOption {
@@ -415,9 +415,9 @@ export const componentsConfig: ComponentsConfig = {
           { id: "LowerBlog_03", src: "/admin/3.png", alt: "LowerBlog_03" },
         ],
         components: {
-          LowerBlog_01: <LowerBlog_01 />,
-          LowerBlog_02: <LowerBlog_02 />,
-          LowerBlog_03: <LowerBlog_03 />,
+          // LowerBlog_01: <LowerBlog_01 />,
+          // LowerBlog_02: <LowerBlog_02 />,
+          // LowerBlog_03: <LowerBlog_03 />,
         },
       },
       footer: {
@@ -1087,8 +1087,8 @@ export const componentsConfig: ComponentsConfig = {
           { id: "BlogDetail_02", src: "/admin/2.png", alt: "BlogDetail_02" },
         ],
         components: {
-          BlogDetail_01: <BlogDetail_01 params={{ id: "" }} />,
-          BlogDetail_02: <BlogDetail_02 params={{ id: "" }} />,
+          // BlogDetail_01: <BlogDetail_01 params={{ id: "" }} />,
+          // BlogDetail_02: <BlogDetail_02 params={{ id: "" }} />,
         },
       },
       footer: {

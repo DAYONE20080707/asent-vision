@@ -18,10 +18,10 @@ export const CompanyInfo = [
       />
     ),
     companyPostalCode: "107-0062",
-    companyAddress: "東京都葛飾区青戸7-30-1-305号",
+    companyAddress: "東京都葛飾区青戸7-30-1",
     companyTel: "03-6455-5380",
     companyTelHref: "tel:0364555380",
-    companyEmail: "info@company.co.jp",
+    companyEmail: "info@ascentvision.jp",
   },
 ]
 

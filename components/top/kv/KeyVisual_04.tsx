@@ -23,8 +23,8 @@ const KeyVisual_04 = () => {
           <KeyVisualContent className="h-screen" />
         </section>
         <TopPageHeadline
-          mainTitle={<>Create the next stage.</>}
-          subtitleBottom="企業と働く人。ステップアップのループへ。"
+          mainTitle={<>Empower. Transform. Connect.</>}
+          subtitleBottom="人を動かす。組織を変える。世界とつながる。"
           className="w-full text-white text-center absolute left-1/2  transform -translate-x-1/2 top-1/2 -translate-y-1/2"
         />
         <div className="absolute left-1/2  transform -translate-x-1/2 bottom-4 md:bottom-16">

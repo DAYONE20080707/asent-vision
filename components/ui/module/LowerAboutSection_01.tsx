@@ -31,15 +31,15 @@ const LowerAboutSection_01 = ({
   return (
     <>
       <div className="md:flex items-start justify-between md:max-w-[1240px] mx-auto gap-10 text-white px-5">
-        <h3 className="w-full md:max-w-[500px] text-2xl md:text-[40px] leading-relaxed md:leading-[160%] tracking-[0.03em]">
+        <h3 className="w-full md:max-w-[500px] text-2xl md:text-[42px] leading-relaxed md:leading-[160%] tracking-[0.03em]">
           {convertNewLines(title)}
         </h3>
         <div>
-          <p className="w-full md:max-w-[660px] leading-relaxed md:leading-[45px] text-base md:text-lg mt-10 md:mt-0 whitespace-pre-line tracking-[0.03em]">
+          <p className="w-full md:max-w-[660px] leading-relaxed md:leading-[45px] text-base md:text-xl mt-10 md:mt-0 whitespace-pre-line tracking-[0.03em]">
             {description}
           </p>
           {(position || name) && (
-            <p className="mt-10 text-base md:text-lg leading-[250%] tracking-[0.03em]">
+            <p className="mt-10 text-base md:text-xl leading-[250%] tracking-[0.03em]">
               {position}
               <br />
               {name}

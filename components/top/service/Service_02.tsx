@@ -29,17 +29,17 @@ const Service_02 = () => {
                 alt="Service Image"
                 width={580}
                 height={853}
-                className="w-full h-full max-w-[580px] max-h-[853px] rounded-[10px]"
+                className="w-full h-full rounded-[10px] object-cover"
               />
             </div>
             <div className="flex-1 max-w-[540px]">
               <ContentHeadline
                 enTitle="Service"
-                mainTitle="事業内容"
+                mainTitle="事業紹介"
                 enTitleClassName=""
                 titleClassName=""
               />
-              <h3 className=" text-2xl md:text-[40px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
+              <h3 className=" text-2xl md:text-[42px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
               人と組織の成長を支援し、
                 <br />
                 企業の未来と世界を <br />つなぐ存在。

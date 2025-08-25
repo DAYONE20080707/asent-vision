@@ -35,7 +35,7 @@ const ContentHeadline: React.FC<ContentHeadlineProps> = ({
       )}
       <h1
         className={classNames(
-          "text-sm md:text-lg font-semibold",
+          "text-sm md:text-xl font-semibold",
           titleClassName
         )}
       >
@@ -43,7 +43,7 @@ const ContentHeadline: React.FC<ContentHeadlineProps> = ({
       </h1>
       <h3
         className={classNames(
-          "text-[40px] font-en leading-[120%] mt-1",
+          "text-[42px] font-en leading-[120%] mt-1",
           enTitleClassName
         )}
       >

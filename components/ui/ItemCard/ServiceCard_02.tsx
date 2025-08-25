@@ -36,7 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         })}
       >
         <div
-          className={classNames("font-medium font-en", {
+          className={classNames("font-medium font-en text-xl leading-[160%]", {
             "text-white": className.includes("overlay"),
             "text-accentColor": !className.includes("overlay"),
           })}
@@ -52,7 +52,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           {title}
         </div>
         <div
-          className={classNames("leading-[160%]",{
+          className={classNames("leading-[160%] text-[17px]",{
             "text-white": className.includes("overlay"),
             "text-black": !className.includes("overlay"),
           })}

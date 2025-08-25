@@ -12,7 +12,7 @@ import ContactButton from "@/components/ui/button/ContactButton"
 const Footer1 = () => {
   const { companyName, companyPostalCode, companyAddress } = CompanyInfo[0]
   return (
-    <footer className="bg-baseColor text-white border-t py-10 md:py-[120px] px-4 md:px-0">
+    <footer className="bg-baseColor text-white py-10 md:py-[120px] px-4 md:px-0">
       <div className="md:max-w-[1240px] mx-auto md:px-5">
         <div className="md:flex justify-between items-center">
           <div className="space-y-3">

@@ -29,14 +29,14 @@ const AboutSection_02 = ({
   };
 
   return (
-    <div className=" md:flex justify-start md:space-x-20 border-b-2 pb-24">
+    <div className=" md:flex justify-center md:space-x-20 pb-24 text-white">
       <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-[761px] relative">
         <Image
           src={imageUrl || "/top/message/message_img.png"}
           alt={name || "message"}
           layout="fill"
           objectFit="cover"
-          className="block w-full h-full"
+          className="block w-full h-full rounded-[20px]"
         />
       </div>
       <div className="md:max-w-[600px] ">

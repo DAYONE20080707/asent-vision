@@ -1,13 +1,13 @@
-import MoreButton from "@/components/ui/button/MoreButton";
-import Image from "next/image";
+import MoreButton from "@/components/ui/button/MoreButton"
+import Image from "next/image"
 
 interface ServiceSection_03Props {
-  enTitle: string; // タイトル（英語）
-  jaTitle: string; // タイトル（日本語）
-  headingText: string; // 見出しテキスト
-  description: string; // 本文
-  buttonHref?: string; // ボタンリンク先（任意）
-  imageUrl?: string; // 画像URL（任意）
+  enTitle: string // タイトル（英語）
+  jaTitle: string // タイトル（日本語）
+  headingText?: string // 見出しテキスト
+  description: string // 本文
+  buttonHref?: string // ボタンリンク先（任意）
+  imageUrl?: string // 画像URL（任意）
 }
 
 const ServiceSection_03 = ({
@@ -24,8 +24,8 @@ const ServiceSection_03 = ({
         {line}
         {i !== text.split("\\n").length - 1 && <br />}
       </span>
-    ));
-  };
+    ))
+  }
 
   return (
     <div className="flex flex-col justify-start gap-10 md:gap-10">
@@ -35,23 +35,23 @@ const ServiceSection_03 = ({
           alt={jaTitle || "message"}
           layout="fill"
           objectFit="cover"
-          className="block w-full h-full rounded-[15px]"
+          className="block w-full h-full rounded-l-[15px]"
         />
       </div>
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="md:w-[28vw] md:max-w-[400px]">
-          <p className="text-accentColor text-lg font-lato font-extrabold tracking-[0.03em]">
+      <div className="flex flex-col md:flex-row gap-20">
+        <div className="md:w-[35%] md:max-w-[400px]">
+          <p className="text-accentColor text-lg font-en font-extrabold tracking-[0.03em]">
             {enTitle}
           </p>
-          <h2 className="text-accentColor text-[28px] font-bold leading-[150%] tracking-[0.05em] mt-2 pb-6">
-            {jaTitle}
+          <h2 className="text-accentColor text-[28px] leading-[150%] tracking-[0.05em] mt-2 pb-6">
+            {convertNewLines(jaTitle)}
           </h2>
         </div>
-        <div className="md:w-[72vw] md:max-w-[800px]">
+        <div className="md:w-[65%] md:max-w-[800px]">
           <h3 className="text-[22px] font-medium leading-[160%] tracking-[0.03em] text-accentColor">
-            {convertNewLines(headingText)}
+            {headingText ? convertNewLines(headingText) : null}
           </h3>
-          <p className="mt-4 text-base font-normal leading-[160%] tracking-[0.02em] whitespace-pre-line">
+          <p className="mt-[26px] text-base md:text-xl font-normal ![line-height:250%] tracking-[0.02em] whitespace-pre-line">
             {description}
           </p>
           {buttonHref && (
@@ -63,7 +63,7 @@ const ServiceSection_03 = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ServiceSection_03;
+export default ServiceSection_03

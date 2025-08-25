@@ -7,64 +7,52 @@ import Link from "next/link"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import PageContent from "@/components/ui/frame/PageContent"
 import ProfileCard from "@/components/ui/ItemCard/ProfileCard"
+import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Profile_01 = () => {
   return (
     <>
-      <PageContent className="bg-bgLightBlue">
-        <section className="md:max-w-[1200px] mx-auto">
+      <SectionContent variant="dot">
+        <section className="md:max-w-[1200px] mx-auto text-white">
           <ContentHeadline
             enTitle="Profile"
             mainTitle="会社概要"
-            enTitleClassName="text-center"
-            titleClassName="text-center"
+            enTitleClassName="text-white"
+            titleClassName=""
           />
-          <div className="mt-16 bg-white grid md:grid-cols-2 gap-x-20 p-10">
-            <div>
-              <ProfileCard label="社名" value="企業名" />
-              <ProfileCard label="設立" value="0000年00月00日" />
-              <ProfileCard label="資本金" value="000円" />
-              <ProfileCard
-                label="所在地"
-                value={`000-000\n○○県○○市○○町00-00\n○○○○○ビル00F`}
-              />
-              <ProfileCard label="電話番号" value="000-000-0000" />
-              <ProfileCard label="FAX" value="000-000-0000" />
-              <ProfileCard label="代表者" value="氏名　氏名" />
-              <ProfileCard label="URL" value="example@aa.aaaa" />
-            </div>
-            <div>
-              <ProfileCard
-                label="役員"
-                value={`役職　○○○○○○\n役職　○○○○○○\n役職　○○○○○○`}
-              />
-              <ProfileCard label="従業員" value="0000名" />
-              <ProfileCard label="事業内容" value={`○○○○○○○○○○\n○○○○○○○○○`} />
-              <ProfileCard label="主要取引先" value={`○○○○○○○○○○\n○○○○○○○○○`} />
-              <ProfileCard
-                label="主要取引銀行"
-                value={`○○○○○○○○○○\n○○○○○○○○○`}
-              />
-            </div>
+          <div className="mt-16">
+            <ProfileCard
+              label="社名"
+              value="株式会社アセントビジョン"
+              isFirst={true}
+            />
+            <ProfileCard
+              label="本社所在地"
+              value={`125-0062 東京都葛飾区青戸7-30-1\n電話番号　000-000-0000／FAX　000-000-0000`}
+            />
+            <ProfileCard
+              label="事業内容"
+              value="人事コンサルティング、経営コンサルティング、人材採用支援、教育研修"
+            />
           </div>
           <div className="mt-16">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853707453!2d139.76454987585436!3d35.68124052997326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sfr!4v1728031590235!5m2!1sja!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6475.647371763422!2d139.84992484447267!3d35.755138140253614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018858099416b39%3A0xadb61ca90d24bed1!2z44CSMTI1LTAwNjIg5p2x5Lqs6YO96JGb6aO-5Yy66Z2S5oi477yX5LiB55uu!5e0!3m2!1sja!2sjp!4v1756080140704!5m2!1sja!2sjp"
               width="1200"
-              height="400"
+              height="523"
               style={{ border: "0" }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full max-w-[600px] md:max-w-[1200px]"
-            />
+              className="w-full max-w-[600px] md:max-w-[1200px] rounded-[20px]"
+            ></iframe>
             <p className="mt-4 font-light">
-              000-000
+              125-0062
               <br />
-              ○○県○○市○○町00-00○○○○○ビル00F
+              東京都葛飾区青戸7-30-1
             </p>
           </div>
         </section>
-      </PageContent>
+      </SectionContent>
     </>
   )
 }

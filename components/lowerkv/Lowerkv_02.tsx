@@ -1,26 +1,38 @@
-"use client";
+"use client"
 
-import Image from "next/image";
+import Image from "next/image"
+
+interface Lowerkv_02Props {
+  // 画像関連
+  backgroundImage?: string
+  // テキスト関連
+  title?: string
+  subtitle?: string
+}
 
 // 私たちについて
-const Lowerkv_02 = () => {
+const Lowerkv_02 = ({
+  backgroundImage = "/common/lowerkv.jpg",
+  title = "タイトルが入ります",
+  subtitle = "title",
+}: Lowerkv_02Props) => {
   return (
     <div
-      className="h-[200px] md:h-[400px]"
+      className="h-[200px] md:h-[800px]"
       style={{
-        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(/common/lowerkv.jpg) lightgray 50% / cover no-repeat`,
+        background: `url(${backgroundImage}) lightgray 50% / cover no-repeat`,
       }}
     >
-      <div className="md:max-w-[1240px] mx-auto space-y-10 px-5 relative h-full flex items-center">
-        <h1 className="text-3xl md:text-5xl font-semibold tracking-[0.05em] leading-[120%] text-white">
-          <span className="block font-lato text-lg font-extrabold mb-1 ![line-height:120%]">
-            title
+      <div className="md:max-w-[1240px] mx-auto space-y-10 px-5 relative h-full flex items-center text-accentColor">
+        <h1 className="text-base md:text-xl font-semibold tracking-[0.03em] leading-[100%]">
+          {title}
+          <span className="block font-en text-[64px] font-normal ![line-height:100%]">
+            {subtitle}
           </span>
-          タイトルが入ります
         </h1>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Lowerkv_02;
+export default Lowerkv_02

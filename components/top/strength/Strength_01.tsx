@@ -44,7 +44,11 @@ const Strength_01 = () => {
           </div>
         </section>
         <div className="mt-16 flex justify-center">
-          <MoreLinkButton href="/" variant="orange">
+          <MoreLinkButton
+            href="https://www.instagram.com/ascent_vision?igsh=dHM2cnBnamw3dXVs&utm_source=qr"
+            variant="orange"
+            target="_blank"
+          >
             Follow us
           </MoreLinkButton>
         </div>

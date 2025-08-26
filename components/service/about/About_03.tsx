@@ -1,12 +1,12 @@
 // components/message/About_03.tsx
 
-"use client";
+"use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
-import AboutSection from "@/components/ui/module/AboutSection_03";
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import Image from "next/image"
+import AboutSection from "@/components/ui/module/AboutSection_03"
 
 // メッセージ
 const About_03 = () => {
@@ -28,7 +28,7 @@ const About_03 = () => {
 私たちはその決断が本当にベストなのか、検討しています。
 そして、その決断が本当のベストになるためのサポートを
 常に用意しています。`}
-              buttonHref="/about"
+              buttonHref="/coming-soon"
               // 以下は任意
               // imageUrl="/path/to/image.jpg"
               // position="代表取締役"
@@ -38,7 +38,7 @@ const About_03 = () => {
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default About_03;
+export default About_03

@@ -10,7 +10,7 @@ const ContactThanksPage = () => {
       <Breadcrumb
         mainTitle="お問い合わせ完了"
         parentDirectoryName="お問い合わせ"
-        parentDirectoryLink="/contact"
+        parentDirectoryLink="/coming-soon"
       />
       {/* <Lowerkv_01 enTitle="CONTACT" mainTitle="お問い合わせ" /> */}
       <Thanks />

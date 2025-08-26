@@ -2,19 +2,19 @@
 export const SnsButton = [
   {
     name: 'Instagram',
-    href: '/',
+    href: 'https://www.instagram.com/ascent_vision?igsh=dHM2cnBnamw3dXVs&utm_source=qr',
     src: '/sns/instagram.svg',
     src_w: '/sns/instagram_w.svg',
   },
   {
     name: 'facebook',
-    href: '/',
+    href: 'https://www.facebook.com/share/1ARqMLrGhr/?mibextid=wwXIfr',
     src: '/sns/facebook.svg',
     src_w: '/sns/facebook_w.svg',
   },
   {
     name: 'Line',
-    href: '/',
+    href: 'https://lin.ee/qPb7auN',
     src: '/sns/line.svg',
   },
   // {

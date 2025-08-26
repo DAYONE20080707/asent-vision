@@ -21,14 +21,16 @@ const marcellus = Marcellus({
 export const metadata: Metadata = {
   title: {
     template: "株式会社アセントビジョン",
-    default: "株式会社アセントビジョン",
+    default: "私たちは、人と組織の可能性を最大限に引き出し、経営戦略と連動した人材・組織づくりを通じて、企業の持続的成長を支えることを使命としています。単なるコンサルタントではなく、共に歩む“パートナー”として、企業の未来を共創します。",
+  },
+   viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
   },
 }
 
-export const viewport: Viewport = {
-  maximumScale: 1,
-  userScalable: false,
-}
 
 interface RootLayoutProps {
   children: React.ReactNode

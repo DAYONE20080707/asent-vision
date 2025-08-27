@@ -28,7 +28,7 @@ const Cta_03 = ({ variant = "dot" }: Cta_03Props) => {
               様々なサービスを提供しております。
             </p>
             <div className="flex justify-center">
-              <MoreLinkButton href="#service" className="md:!w-[350px]" />
+              <MoreLinkButton href="coming-soon" className="md:!w-[350px]" />
             </div>
           </div>
           <div

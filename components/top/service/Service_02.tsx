@@ -39,8 +39,10 @@ const Service_02 = () => {
                 enTitleClassName=""
                 titleClassName=""
               />
-              <h3 className=" text-2xl md:text-[42px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
-                人と組織の成長を支援し、
+
+              <h3 className=" text-2xl md:text-[38px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
+              人と組織の成長を支援し、
+
                 <br />
                 企業の未来と世界を <br />
                 つなぐ存在。

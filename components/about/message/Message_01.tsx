@@ -41,10 +41,9 @@ const Message_01 = () => {
           // position="役職役職"
           name="株式会社アセントビジョン"
           // 以下は任意
-          // buttonHref="/about"
+          // buttonHref="/coming-soon"
           imageUrl="/about/message.jpg"
         />
-       
       </SectionContent>
     </>
   )

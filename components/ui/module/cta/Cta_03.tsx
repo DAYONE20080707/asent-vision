@@ -60,7 +60,7 @@ const Cta_03 = ({ variant = "dot" }: Cta_03Props) => {
             </p>
             <div className="flex justify-center">
               <MoreLinkButton
-                href="/contact"
+                href="/coming-soon"
                 variant={variant === "default" ? "white" : "black"}
                 className="md:!w-[350px]"
               >

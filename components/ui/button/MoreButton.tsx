@@ -8,11 +8,13 @@ const MoreLinkButton = ({
   className = "",
   children = "View more", // デフォルトのテキスト
   variant = "white", // デフォルトは白バージョン
+  target,
 }: {
   href?: string
   className?: string
   children?: React.ReactNode
   variant?: "white" | "orange" | "black"
+  target?: string
 }) => {
   // バリエーションに基づくスタイルを決定
   const getVariantStyles = () => {
@@ -41,6 +43,7 @@ const MoreLinkButton = ({
   return (
     <Link
       href={href}
+      target={target}
       className={classNames(
         "border font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[350px] px-6 py-4 relative group md:text-xl leading-[160%]",
         getVariantStyles(),

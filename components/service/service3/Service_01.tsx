@@ -1,12 +1,12 @@
 // components/message/Service_01.tsx
 
-"use client";
+"use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
-import ServiceSection_01 from "@/components/ui/module/ServiceSection_01";
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import Image from "next/image"
+import ServiceSection_01 from "@/components/ui/module/ServiceSection_01"
 
 // メッセージ
 const Service_01 = () => {
@@ -26,13 +26,13 @@ const Service_01 = () => {
             jaTitle="サービスの特徴1"
             headingText="見出しテキストはいります見出しテキストはいります見出しテキストはいります見出しテキストはいります見出しテキストはいります"
             description={`テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。す。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。テキストはいります。`}
-            buttonHref="/about"
+            buttonHref="/coming-soon"
             // imageUrl="/path/to/image.jpg"
           />
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Service_01;
+export default Service_01

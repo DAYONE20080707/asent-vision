@@ -1,12 +1,12 @@
 // components/message/Message_04.tsx
 
-"use client";
+"use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
-import AboutSection from "@/components/ui/module/AboutSection_04";
+import MoreLinkButton from "@/components/ui/button/MoreButton"
+import ContentHeadline from "@/components/ui/frame/ContentHeadline"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import Image from "next/image"
+import AboutSection from "@/components/ui/module/AboutSection_04"
 
 // メッセージ
 const Message_04 = () => {
@@ -21,9 +21,9 @@ const Message_04 = () => {
             entitleClassName="text-center"
             titleClassName="text-center"
           /> */}
-                <AboutSection
-        title="無数の選択肢の中から\nベストな選択を"
-        description={`経営者は日々悩んでいます。そして、日々決断しています。
+          <AboutSection
+            title="無数の選択肢の中から\nベストな選択を"
+            description={`経営者は日々悩んでいます。そして、日々決断しています。
 
 一番成果が上がる選択はどれか。一番効率のいい選択はどれか。
 無数の選択肢の中からベストな選択ができるよう、
@@ -32,16 +32,16 @@ const Message_04 = () => {
 私たちはその決断が本当にベストなのか、検討しています。
 そして、その決断が本当のベストになるためのサポートを
 常に用意しています。`}
-        position="役職役職"
-        name="氏名　氏名"
-        // 以下は任意
-        // buttonHref="/about"
-        // imageUrl="/path/to/image.jpg"
-      />
+            position="役職役職"
+            name="氏名　氏名"
+            // 以下は任意
+            // buttonHref="/coming-soon"
+            // imageUrl="/path/to/image.jpg"
+          />
         </section>
       </SectionContent>
     </>
-  );
-};
+  )
+}
 
-export default Message_04;
+export default Message_04
